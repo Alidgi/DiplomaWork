@@ -1,0 +1,24 @@
+==project==
+name :string
+owner_id :string
+
+==form==
+name :string
+project_id :string
+value :string
+
+==user==
+first_name :string
+last_name :string
+login :string
+password :string
+
+==rule==
+login :string
+permission :string
+object :string
+type :string
+
+==element==
+name :string
+value :string

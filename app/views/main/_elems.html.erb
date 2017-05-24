@@ -1,0 +1,17 @@
+<ul>
+  <li><a href="#tabsf-1">Элементы</a></li>
+  <li><a href="#tabsf-2">Свойства</a></li>
+</ul>
+<div id="tabsf-1" class = "ftab">
+  <% @elements.each do |element| %>
+      <input style = "width:100%; clear:right; height: 60px";
+             id = "<%= element.id %>"; class = "jqbutton hasmenu"; type = "button"
+             value = "<%= element.title %>";>
+      </input>
+      <div id = "inner<%= element.id %>" style = "display:none"; value =""><%= element.value %></div>
+      <div id = "nam<%= element.id %>" style = "display:none"; value =""><%= element.name %></div>
+  <% end %>
+</div>
+<div id="tabsf-2" class = "ui-widget-content">
+  <% render 'attrs' %>
+</div>
